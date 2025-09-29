@@ -1,0 +1,35 @@
+[project]
+name = "codingassignment4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "dotenv>=0.9.9",
+    "load-dotenv>=0.1.0",
+    "modal>=1.1.4",
+    "openai>=1.109.1",
+    "os",
+    "pandas>=2.3.2",
+    "path>=17.1.1",
+    "requests>=2.32.5",
+    "secret>=0.8",
+    "streamlit>=1.50.0",
+    "subprocess",
+    "supabase>=2.20.0",
+    "sys",
+]
+
+[tool.uv.workspace]
+members = [
+    "json",
+    "os",
+    "subprocess",
+    "sys",
+]
+
+[tool.uv.sources]
+os = { workspace = true }
+sys = { workspace = true }
+subprocess = { workspace = true }
